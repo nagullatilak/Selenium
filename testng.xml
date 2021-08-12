@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/home/tilan/IdeaProjects/AmazonAssignment">
+        <classes>
+            <class name="testcases.SignIn">
+            <methods><include name="login"/>
+            </methods>
+            </class>
+             <class name="testcases.TodaysDealsTest">
+                <methods><include name="todaysDeals"/>
+                </methods>
+            </class>
+            <class name="testcases.MobileTest">
+                <methods><include name="selectLastMobile"/>
+                </methods>
+            </class>
+            <class name="testcases.PrimeDeliveryTest">
+                <methods><include name="primeDelivery"/>
+                </methods>
+            </class>
+            <class name="testcases.LeftNavTest">
+                <methods><include name="leftNavigation"/>
+                </methods>
+            </class>
+            <class name="testcases.YourOrdersTest">
+                <methods><include name="myOrders"/>
+                </methods>
+            </class>
+            <class name="testcases.AddPaymentTest">
+                <methods>
+                    <include name="addPaymentOption"/>
+                </methods>
+            </class>
+            <class name="testcases.AddAddressTest">
+                <methods>
+                    <include name="addAddress"/>
+                </methods>
+            </class>
+        </classes>
+    </test></suite>
