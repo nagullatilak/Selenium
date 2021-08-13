@@ -29,7 +29,7 @@ public class MobilesPage {
     }
     public  WebElement getSelectLastMobile(){
         String  size = String.valueOf(selectLastMobile.size()-1);
-        System.out.println("Size :"+size);
+       // System.out.println("Size :"+size);
         return driver.findElement(By.cssSelector("div[data-component-type='s-search-result']:nth-child(15) h2"));
     }
     public  By waitForMobile(){

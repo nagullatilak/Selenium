@@ -17,6 +17,17 @@ public class AddAddressPage {
     WebElement addAddressBox;
     @FindBy(xpath = "//*[@id=\"address-ui-widgets-enterAddressFullName\"]")
     WebElement enterYourName;
+    @FindBy(xpath = "//*[@id=\"address-ui-widgets-enterAddressPhoneNumber\"]")
+    WebElement mobileNO;
+    @FindBy(xpath = "//*[@id=\"address-ui-widgets-enterAddressPostalCode\"]")
+    WebElement pinCode;
+    @FindBy(xpath = "//*[@id=\"address-ui-widgets-enterAddressLine1\"]")
+    WebElement  flat;
+    @FindBy(xpath = "//*[@id=\"address-ui-widgets-enterAddressLine2\"]")
+    WebElement street;
+    @FindBy(xpath = "//*[@id=\"address-ui-widgets-landmark\"]")
+    WebElement landMark;
+    //@FindBy(xpath = "")
     @FindBy(xpath = "//*[@id=\"address-ui-widgets-addr-details-address-type-and-business-hours\"]/span/span")
     WebElement addressType;
     @FindBy(id = "address-ui-widgets-form-submit-button")
@@ -31,6 +42,21 @@ public class AddAddressPage {
     }
     public WebElement getEnterYourName(){
         return  enterYourName;
+    }
+    public WebElement getMobileNO(){
+        return  mobileNO;
+    }
+    public WebElement getPinCode(){
+        return  pinCode;
+    }
+    public WebElement getFlat(){
+        return flat;
+    }
+    public WebElement getStreet(){
+        return flat;
+    }
+    public WebElement getLandMark(){
+        return landMark;
     }
     public WebElement getAddressType(){
         return addressType;
